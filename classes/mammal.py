@@ -15,3 +15,5 @@ class Mammal:
 
     def run_around(self):
         self.rested = False
+
+# DRY - DONT REPEAT YOURSELF
