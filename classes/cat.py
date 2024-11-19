@@ -1,17 +1,19 @@
 from classes.mammal import Mammal
 
-class Cat(Mammal):
+class Cat():
 
-    def __init__(self, name, rested=True, lives_remaining=9):
-        super().__init__(name=name, rested=rested)
-        self.lives_remaining = lives_remaining
+    def __init__(self, name, rested):
+        self.name = name
+        self.rested = rested
     
     def __repr__(self):
-        return f"Cat(name={self.name}, rested={self.rested}, lives_remaining={self.lives_remaining})"
+        return f"Cat(name={self.name}, rested={self.rested})"
     
     def make_sound(self):
         return "MEOWMEOWMEOWMEOWMEOWMEOWMEOWMEOW"
     
     def sleep(self):
-        super().sleep()
-        print("watching my cat twitch run")
+        self.rested = True
+
+    def run_around(self):
+        self.rested = False

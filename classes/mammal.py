@@ -1,6 +1,6 @@
 class Mammal:
 
-    def __init__(self, name, rested=False):
+    def __init__(self, name, rested):
         self.name = name
         self.rested = rested
 
@@ -15,5 +15,3 @@ class Mammal:
 
     def run_around(self):
         self.rested = False
-
-# DRY - DONT REPEAT YOURSELF

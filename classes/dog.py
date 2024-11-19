@@ -1,9 +1,8 @@
-from classes.mammal import Mammal
-
-class Dog(Mammal):
+class Dog():
 
     def __init__(self, name, rested, is_good=True):
-        super().__init__(name=name, rested=rested)
+        self.name = name
+        self.rested = rested
         self.is_good = is_good
 
     def __repr__(self):
@@ -13,9 +12,7 @@ class Dog(Mammal):
         return "WOOF WOOF"
 
     def sleep(self):
-        super().sleep()
-        print("lil woof woof")
+        self.rested = True
 
     def run_around(self):
-        super().run_around()
-        print("ZOINKS!")
+        self.rested = False
