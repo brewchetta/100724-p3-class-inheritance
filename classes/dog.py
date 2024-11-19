@@ -4,15 +4,3 @@ class Dog():
         self.name = name
         self.rested = rested
         self.is_good = is_good
-
-    def __repr__(self):
-        return f"Dog(name={self.name}, rested={self.rested}, is_good={self.is_good})"
-
-    def make_sound(self):
-        return "WOOF WOOF"
-
-    def sleep(self):
-        self.rested = True
-
-    def run_around(self):
-        self.rested = False

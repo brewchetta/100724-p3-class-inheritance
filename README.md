@@ -14,7 +14,7 @@
 
 2. Amend the `__init__` method for Dog so it properly utilizes the `super` method.
 
-3. Amend the `__repr__` method so it makes sense with the new attributes from `Mammal`.
+3. Amend the `__repr__` method if needed.
 
 4. Change the behavior for the `make_sound` method in `Dog` so it returns something that makes more sense. You will not need to use `super`.
 
