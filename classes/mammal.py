@@ -1,3 +1,5 @@
+# DRY - DONT REPEAT YOURSELF
+
 class Mammal:
 
     def __init__(self, name, rested):
@@ -5,7 +7,7 @@ class Mammal:
         self.rested = rested
 
     def __repr__(self):
-        return f"Mammal(name={self.name}, rested={self.rested})"
+        return f"{self.__class__.__name__}(name={self.name}, rested={self.rested})"
 
     def make_sound(self):
         return "generic mammal sound"
